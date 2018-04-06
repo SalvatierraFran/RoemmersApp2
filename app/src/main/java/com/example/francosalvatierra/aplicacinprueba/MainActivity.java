@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
                 new MaterialFilePicker()
                         .withActivity(MainActivity.this)
                         .withRequestCode(1)
-                        .withFilter(Pattern.compile(".*\\.pdf\\.xlsx$")) // Filtering files and directories by file name using regexp
+                        .withFilter(Pattern.compile("^.*.(pdf|xlsx)$")) // Filtering files and directories by file name using regexp
                         /*.withFilterDirectories(true) // Set directories filterable (false by default)*/
                         .withHiddenFiles(true) // Show hidden files and folders
                         .start();
